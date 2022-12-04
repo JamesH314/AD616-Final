@@ -25,6 +25,8 @@ Sum_GetOn1 <- ggplot(data = P_RG2, aes(x = factor(name, level=
 print(Sum_GetOn1 + ggtitle("Sum of passengers get on the bus at each stop") + 
         labs(y = "Number of Passenger", x = "Bus Stop"))
 
+
+
 ##Peak hours, NS final stop
 Peak_NS <- Peak_1
 Peak_NS[upper.tri(Peak_1)] <- 0
